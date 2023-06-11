@@ -1,0 +1,35 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)), url('../images/main.jpeg') center/cover no-repeat;
+  .hero-banner {
+    text-align: center;
+    color: $--color-white;
+    h1 {
+      text-transform: uppercase;
+    }
+    p {
+      max-width: 45rem;
+    }
+    .btn.hero-btn {
+      text-transform: uppercase;
+      color: $--color-blue;
+      background-color: $--color-white;
+      padding: 0.9rem 1.6rem;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: $--transition;
+      margin-top: 1rem;
+      display: inline-block;
+      font-size: 1.6rem;
+      &:hover {
+        border: 2px solid $--color-white;
+        background-color: transparent;
+        color: $--color-white;
+      }
+    }
+  }
+}

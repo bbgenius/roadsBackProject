@@ -1,0 +1,33 @@
+.section-title {
+  text-align: center;
+  margin-bottom: 4rem;
+  h2 {
+    text-transform: uppercase;
+  }
+  span {
+    color: $--color-blue;
+  }
+}
+.section-center {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.btn {
+  text-transform: uppercase;
+  background-color: $--color-blue;
+  color: $--color-white;
+  padding: 0.375rem 0.75rem;
+  display: inline-block;
+  letter-spacing: $--letter-spacing;
+  transition: $--transition;
+  border: 2px solid transparent;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+    grid-gap: 2rem;
+  }
+}

@@ -1,0 +1,34 @@
+.about-center {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  .about-img {
+    margin-bottom: 2rem;
+  }
+  .about-info {
+    margin-bottom: 2rem;
+    h3 {
+      letter-spacing: $--letter-spacing;
+    }
+    p {
+      color: $--color-blue;
+    }
+    .btn {
+      &:hover {
+        color: #044e53;
+        background-color: #88ebf2;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .about-center {
+    .about-img {
+      margin-bottom: 0;
+    }
+    .about-info {
+      margin-bottom: 0;
+    }
+  }
+}
